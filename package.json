@@ -9,7 +9,7 @@
     "compile": "tsc",
     "build": "npm run compile",
     "postinstall": "npm run bundle && npm run compile",
-    "server": "esbuild-node src/server/server.ts",
+    "server": "esbuild src/server/server.ts",
     "start": "npm run bundle && npm run server",
     "test": "npm run compile && mocha build/tests/ && node scripts/verify.js",
     "watch": "nodemon --watch src -e ts --exec npm run start",
